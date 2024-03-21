@@ -1,11 +1,12 @@
 public abstract class Conta {
     private String titular;
-    private String saldo;
+    private Double saldo;
     private String deposito;
     private String transferencia;
     private String saque;
-public Conta( String saldo,){
-    this.saldo = 0;
+public Conta( Double saldo ){
+
+    this.saldo = 0.0;
 }
 
     public String getTitular() {
@@ -16,11 +17,11 @@ public Conta( String saldo,){
         this.titular = titular;
     }
 
-    public String getSaldo() {
+    public Double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(String saldo) {
+    public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
 
